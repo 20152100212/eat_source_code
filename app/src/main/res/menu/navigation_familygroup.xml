@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_allmember"
+        android:icon="@drawable/ic_allitem_24dp"
+        android:title="@string/title_allmember" />
+
+    <item
+        android:id="@+id/navigation_share"
+        android:icon="@drawable/ic_share_24dp"
+        android:title="@string/title_share" />
+
+    <item
+        android:id="@+id/navigation_reminded"
+        android:icon="@drawable/ic_reminded_24dp"
+        android:title="@string/title_reminded" />
+
+</menu>

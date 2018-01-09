@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="s_kinds">
+        <item>药品</item>
+        <item>水果 </item>
+        <item>肉类</item>
+        <item>零食</item>
+        <item>饮品</item>
+        <item>其他</item>
+    </string-array>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_allitem"
+        android:icon="@drawable/ic_allitem_24dp"
+        android:title="@string/title_allitem" />
+
+    <item
+        android:id="@+id/navigation_food"
+        android:icon="@drawable/ic_fooditem_24dp"
+        android:title="@string/title_food" />
+
+    <item
+        android:id="@+id/navigation_medicine"
+        android:icon="@drawable/ic_medicineitem_24dp"
+        android:title="@string/title_medicine" />
+
+    <item
+        android:id="@+id/navigation_reminding"
+        android:icon="@drawable/ic_remindingitem_24dp"
+        android:title="@string/title_reminding" />
+
+</menu>

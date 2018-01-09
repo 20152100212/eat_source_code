@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/item_small_imageView"
+        android:layout_gravity="center_vertical"/>
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:id="@+id/item_name"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text=""
+                android:drawableRight="@drawable/ic_share"
+                android:id="@+id/item_ismine"
+                android:layout_gravity="top|left"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text=""
+                android:drawableRight="@drawable/ic_notifications"
+                android:id="@+id/item_reminder"
+                android:layout_gravity="top|left"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="存放位置："
+                    android:textSize="13dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/item_textView1"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/item_location"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/item_textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="剩余保质期："
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/item_lasts"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

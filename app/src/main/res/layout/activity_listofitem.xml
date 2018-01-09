@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.main_interface.Activity_itemlist">
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="?android:attr/windowBackground"
+        app:itemIconTint="@drawable/navigation_selector"
+        app:itemTextColor="@drawable/navigation_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation_itemlist" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/goback"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:background="@color/lucency"
+            app:srcCompat="@drawable/ic_go_back_24dp" />
+
+        <TextView
+            android:id="@+id/listofitem_titlebar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/list_name"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/additem"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:background="@color/lucency"
+            app:srcCompat="@drawable/ic_additem_24dp" />
+
+    </LinearLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        tools:layout_editor_absoluteY="59dp">
+
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/colorPrimary"
+            android:inputType="text"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteY="7dp" />
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <ListView
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="55dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        tools:layout_editor_absoluteY="126dp">
+
+    </ListView>
+
+</android.support.constraint.ConstraintLayout>

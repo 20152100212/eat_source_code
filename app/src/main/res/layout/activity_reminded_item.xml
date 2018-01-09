@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.main_interface.Remind_himOrher"
+    >
+
+    <!--备用!-->
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="2dp">
+
+        <ImageButton
+            android:id="@+id/goback"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:background="@color/lucency"
+            app:srcCompat="@drawable/ic_go_back_24dp" />
+
+        <TextView
+            android:id="@+id/listofitem_remind_himorher"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/remind_himorher"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/additem"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:background="@color/lucency"
+            app:srcCompat="@drawable/ic_additem_24dp" />
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

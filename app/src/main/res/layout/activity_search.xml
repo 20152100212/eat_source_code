@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.main_interface.SearchItem">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="66dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rectangle_shape"
+            android:iconifiedByDefault="true"
+            android:imeOptions="actionSearch"
+            android:queryHint="请输入欲搜索内容"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cancel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.428" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/lucency"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="项目"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/listView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout_1" />
+
+    <TextView
+        android:id="@+id/cannot_finditem"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:drawableTop="@drawable/ic_cannot_find"
+        android:gravity="center"
+        android:text="找不到相应信息"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18dp"
+        android:visibility="invisible"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/listView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="好友"
+        android:textSize="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/listView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ListView
+        android:id="@+id/listView2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+    <TextView
+        android:id="@+id/cannot_findfg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:drawableTop="@drawable/ic_cannot_find"
+        android:gravity="center"
+        android:text="找不到相应信息"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18dp"
+        android:visibility="invisible"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/listView2" />
+
+
+</android.support.constraint.ConstraintLayout>
